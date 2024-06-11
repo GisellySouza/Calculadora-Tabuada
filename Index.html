@@ -10,24 +10,30 @@
 <body>
       
         <div id="cabeçalho">
-            <img src="logo.svg" width="100">
+            <img id="logo" src="logo.svg" width="100">
             <h1> Tabuada </h1>
         </div>
     <section>  
         <div id="corpo">     
             <p>
                 De qual valor você deseja saber a Tabuada?<br>
-                <input class="formulário" type="number"> 
+                <input class="formulário" type="number" id="num"> 
             </p>
             <p>
                 Até que número você quer ver?<br>
-                <input class="formulário" type="number">
+                <input class="formulário" type="number" id="final" >
                 
             </p>
             <br>
-            <input type="button" id="botao" value="Calcular"><br><br>
-            Preencha os valores cima.
+            <div id="resposta">
+                <input type="button" id="botao" value="Calcular" onclick="Calcular()"><br><br>
+                Preencha os valores cima.
+            </div>
         </div>
     </section>
 </body>
+<script src="funcionalidade.js">
+
+
+</script>
 </html>
